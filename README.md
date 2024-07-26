@@ -10,7 +10,5 @@ response = requests.get(api_endpoint, params=query_params)
 
 if response.status_code == 200:
     data = response.json()
-    # Handle response data
 else:
-    # Handle errors
     print(f'Error: {response.status_code} - {response.text}')
